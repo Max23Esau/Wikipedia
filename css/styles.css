@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-languages {
+    position: relative;
+    height: 325px;
+    width: 546px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 325px;
+    width: 546px;
+    max-width: 100%;
+    margin: 0 auto; */
+}
+/* .main-languages-left, .main-languages-right{
+    display: grid;
+
+} */
+/* .main-languages-left div, .main-languages-right div{ */
+.main-languages-contain div {
+    width: 156px;
+    height: 45px;
+    position: absolute;
+}
+.lang1 {
+    top: 0;
+    right: 60%;
+}
+.lang2 {
+    top: 0;
+    right: 10%;
+}
+.lang3 {
+    top: 20%;
+    left: 72%;
+}
+.lang4 {
+    top: 20%;
+    right: 70%;
+}
+.lang5 {
+    top: 40%;
+    left: 76%;
+}
+.lang6 {
+    top: 40%;
+    right: 74%;
+}
+.lang7 {
+    top: 60%;
+    right: 70%;
+}
+.lang8 {
+    top: 60%;
+    left: 72%;
+}
+.lang9 {
+    top: 80%;
+    right: 60%;
+}
+.lang10 {
+    top: 80%;
+    right: 10%;
+}
+.main-logo {
+    position: absolute;
+    top: 65px;
+    left: 180px;
+    width: 200px;
+    height: 183px;
+}
