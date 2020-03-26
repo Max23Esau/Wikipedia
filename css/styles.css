@@ -1,6 +1,6 @@
 body {
     margin: 0;
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main {
@@ -10,8 +10,20 @@ main {
 }
 
 .main-title {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
+    font-family: 'Linux Libertine','Hoefler Text',Georgia,'Times New Roman',Times,serif;
+    margin: 2rem auto .5rem;
+}
+.main-title h1{
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+}
+.main-title p{
+    font-size: 15px;
+    margin: 0;
 }
 
 .main-languages {
@@ -40,6 +52,19 @@ main {
     height: 45px;
     position: absolute;
 }
+.main-languages-contain a{
+    text-decoration: none;
+}
+
+.main-languages-contain div strong{
+    color: #36c;
+    font-size: 16px;
+}
+.main-languages-contain div small{
+    color: #54595d;
+    font-size: 12px;
+}
+
 .lang1 {
     top: 0;
     right: 60%;
@@ -93,7 +118,7 @@ main {
 }
 .main-input-section {
     display: inline-flex;
-    border: 1px solid #3366cc;
+    border: 2px solid #3366cc;
     border-radius: 1px;
     height: 35px;
 }
@@ -112,14 +137,96 @@ main {
     text-transform: uppercase;
     line-height: 34px;
     padding: 0 5px;
+    color:#54595d;
 }
 .fa-angle-down{
     padding: 10px 10px 0 0;
+    color: #54595d;
 }
 .main-input-section button {
     width: 50px;
     height: auto;
     background-color: #36c;
     border: 1px solid #36c;
-    
+}
+
+.button-languages{
+    padding: 6.4px 12.8px;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    border-radius: 2px;
+    color: #36c;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    position: relative;
+    z-index: 2;
+}
+.button-languages .fa-angle-down{
+    padding: 0 2px;
+    color: #36c;
+}
+
+.border-button{
+    background-color: #c8ccd1;
+    height: 1px;
+    max-width: 460px;
+    width: 80%;
+    display: block;
+    position: relative;
+    margin: -28px auto 16px;
+}
+
+.main2{
+    display: grid;
+    grid-template-columns: 460px 850px;
+    padding: 41.6px 12.8px 12.8px;
+}
+
+.main2-download {
+    display: grid;
+    grid-template-columns: 42px 290px;
+    grid-template-rows: 80px 180px;
+    justify-content: center;
+    grid-template-areas:    "wiki-img wiki-text"
+                            "wiki-w-img wiki-w-text";
+    color: #54595d;                            
+    text-align: left;
+}
+.main2-download h2 {
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 20px 0;
+}
+.wiki-img{
+    grid-area: wiki-img;
+    width: 42px;
+    height: 42px;
+}
+.wiki-text{
+    grid-area: wiki-text;
+    font-size: 13px;
+    margin: 3px;
+}
+
+.wiki-w-img{
+    grid-area: wiki-w-img;
+    width: 42px;
+    height: 100%;
+    background-color: #f8f9fa;
+}
+.wiki-w-text{
+    grid-area: wiki-w-text;
+    font-size: 13px;
+    padding: 10px 5px;
+    background-color: #f8f9fa;
+}
+.aside {
+    background-color: #f8f9fa;
+}
+.main2-options {
+    display: grid;
+    grid-template-columns: repeat(3,283px);
+    grid-template-rows: repeat(4, 90px);
 }
