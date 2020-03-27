@@ -11,20 +11,14 @@ main {
 }
 
 .main-title {
-    /* width: 100%; */
     margin: 0 auto;
     font-family: 'Linux Libertine','Hoefler Text',Georgia,'Times New Roman',Times,serif;
-    margin: 2rem auto .5rem;
+    margin: 3rem auto .5rem;
 }
-.main-title h1{
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 30px;
-    margin: 0;
-}
+
 .main-title p{
     font-size: 15px;
-    margin: 0;
+    margin: 5px 0;
 }
 
 .main-languages {
@@ -122,6 +116,10 @@ main {
     border: 2px solid #3366cc;
     border-radius: 1px;
     height: 35px;
+    cursor: pointer;
+}
+.main-input-section:hover {
+    border-color: #447ff5;
 }
 
 .main-input-section input{
@@ -139,6 +137,7 @@ main {
     line-height: 34px;
     padding: 0 5px;
     color:#54595d;
+    cursor: pointer;
 }
 .fa-angle-down{
     padding: 10px 10px 0 0;
@@ -150,7 +149,13 @@ main {
     background-color: #36c;
     border: 1px solid #36c;
 }
-
+.main-input-section button:hover {
+    background: #447ff5;
+    border-color: #447ff5;
+}
+.main-button-languages a{
+    text-decoration: none;
+}
 .button-languages{
     padding: 6.4px 12.8px;
     border: 1px solid #a2a9b1;
@@ -163,6 +168,11 @@ main {
     margin: 1em auto;
     position: relative;
     z-index: 2;
+    cursor: pointer;
+}
+.button-languages:hover {
+    background-color: #fff;
+    border-color: #a2a9b1;
 }
 .button-languages .fa-angle-down{
     padding: 0 2px;
@@ -239,6 +249,8 @@ hr {
     color: #54595d;
     font-size: 12px;
 }
+
+
 .options-img {
     width: 47px;
     height: auto;
@@ -253,7 +265,35 @@ hr {
 .options h2 {
     font-size: 14px;
     color: #36c;
+    font-weight: 400;
 }
 .options h2, .options p {
     margin: 0;
 }
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 0;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.footer-list li{
+    padding-right: 40px;
+    color: #54595d;
+}
+.footer-list li:first-child{
+    list-style: none;
+}
+
+.footer-list a{
+    color: #36c;
+    text-decoration: none;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
+
